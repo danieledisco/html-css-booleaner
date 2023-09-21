@@ -1,0 +1,17 @@
+
+
+#site_header
+{
+       /* width:  max-;*/
+        height: 185px;
+        background-image: url(../img/pattern.png);
+        background-repeat: repeat-x;
+}
+
+#logo
+{
+        width: 50%;
+        height: 50%;
+        margin-top: 70px;
+        margin-left: -280px;
+}
