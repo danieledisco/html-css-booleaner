@@ -173,7 +173,7 @@ main
 
 footer
 {
-  padding: 3rem 0;
+  padding: 1rem;
   background-color: var(--bool-primary);
   color: var(--bool-white)
 }
