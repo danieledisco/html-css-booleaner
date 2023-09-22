@@ -67,6 +67,12 @@ table
   width: 50%;
 }
 
+/*Aggiunto per fare una prova */
+.w_33
+{
+  width: 33%;
+}
+
 .text_left
 {
   text-align: left;
