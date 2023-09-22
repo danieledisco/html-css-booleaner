@@ -12,9 +12,9 @@
 <body>
 
         <header id="site_header">
-               <div>
+                <div>
                         <img class="logo_img" src="./img/logo.svg" alt="The booleaner text">
-                </div>              
+                </div>
         </header>
         <!-- /#site_header -->
 
@@ -22,9 +22,10 @@
                 <!-- Viene usato un altro tag semantico "article" e dentro vi si introduce un nuovo header 
                      caratterizzato da una nuova classe -->
                 <article>
-                        <header class="article_header">   <!-- di fatti la calsse article_header non c'è-->
+                        <header class="article_header"> <!-- di fatti la calsse article_header non c'è-->
                                 <h1>
-                                        Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee
+                                        Internet deve essere al servizio del "bene pubblico": il manifesto di Tim
+                                        Berners-Lee
                                 </h1>
                                 <div class="meta"> <!-- questa classe serve per definire il colore del testo-->
                                         <div class="author"> <!-- class author non esiste -->
@@ -39,11 +40,13 @@
                                 <!-- /.meta -->
 
                         </header>
-                        <!-- /.article_header --> 
-  
+                        <!-- /.article_header -->
+
                         <div class="content"> <!-- anche questa classe non esiste -->
-                                <img src="./img/tim-1.jpg" alt="Photo Tim 1">
-                                <img src="./img/tim-2.jpg" alt="Photo Tim 2">
+                                <div>
+                                        <img src="./img/tim-1.jpg" alt="Photo Tim 1">
+                                        <img src="./img/tim-2.jpg" alt="Photo Tim 2">
+                                </div>
                                 <div class="caption"> <!-- qui viene definita la dimensione delle didascalie-->
                                         <div>
                                                 1st Photo: Lorem, ipsum.
@@ -52,6 +55,42 @@
                                                 2st Photo: Lorem, ipsum.
                                         </div>
                                 </div>
+                                <p class="py_1"> <!-- Aggiunge un padding di 1 rem sopra e sotto -->
+                                        <!-- il tag mark serve per definire la regione da mettere in evidenza con eviednziatore giallo. Rispetto a span è più significativo -->
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quaerat quo
+                                        nostrum omnis eaque laboriosam
+                                        maiores dolor laborum itaque rem! Non minus eveniet id maxime animi quae nihil
+                                        facilis deleniti aliquam
+                                        dignissimos! <mark>Dolorum delectus obcaecati dolore deleniti mollitia impedit
+                                                voluptas ut</mark> , quidem
+                                        dolor ipsam, excepturi tempora placeat pariatur vel accusantium, repellat
+                                        tempore tenetur repellendus libero
+                                        earum aliquam cupiditate reiciendis error. Quaerat, maxime expedita doloribus
+                                        enim explicabo atque harum
+                                        facilis suscipit laborum aut recusandae molestias repellendus dolorum dolor
+                                        eaque, quis magnam minus dicta id.
+                                        Ex iusto sed dolorem vitae, deleniti facilis, earum, a molestiae perspiciatis
+                                        illo perferendis sapiente
+                                        voluptates deserunt provident.
+                                </p>
+                                <ul class="pl_1"> <!-- Aedsso c'è una lista ordinata in cui si chiede 
+                                                        un padding a sinistra di un rem-->
+                                        <li>
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quo
+                                                exercitationem obcaecati deserunt
+                                                rerum voluptatibus.
+                                        </li>
+                                        <li>
+                                                Natus, quos consequatur mollitia enim consequuntur reprehenderit labore.
+                                                Voluptate, vero quod fuga
+                                                quisquam omnis,
+                                        </li>
+                                        <li>
+                                                At aliquam in eaque eius officiis, dignissimos eveniet repudiandae.
+                                                Commodi similique beatae blanditiis
+                                                iste cupiditate molestias iu
+                                        </li>
+                                </ul>
                         </div>
                 </article>
                 <!-- /article -->
