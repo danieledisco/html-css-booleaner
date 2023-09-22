@@ -1,65 +1,226 @@
 
 
+/* #region Common */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --bool-white: #ffffff;
+  --bool-dark: #010001;
+  --bool-gray: rgba(128, 128, 129, 1);
+  --bool-primary: rgba(77, 160, 254, 1);
+  --bool-primary-soft: rgba(178, 231, 243, 1);
+  --bool-secondary: rgba(52, 180, 232, 1);
+  --bool-default-font-size: 18px;
+}
+
+h1
+{
+  font-size: 2.2rem;
+}
+
+h3
+{
+  color: var(--bool-white);
+}
+
+table
+{
+  border-spacing: 0;
+}
+
+/* #endregion Common */
+
+
+/* #region Utility */
+
+.py_1
+{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py_2
+{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pl_1
+{
+  padding-left: 1rem;
+}
+
+.pt_1
+{
+  padding-top: 1rem;
+}
+
+.w_50
+{
+  width: 50%;
+}
+
+.text_left
+{
+  text-align: left;
+}
+
+/* .hightlight {
+  background-color: yellow;
+} */
+
+.bg_primary
+{
+  background-color: var(--bool-primary);
+  color: var(--bool-white)
+}
+
+.bg_primary_soft
+{
+  background-color: var(--bool-primary-soft);
+}
+
+/* #endregion Utility */
+
+/* #region Header */
+
 #site_header
 {
-       /* width:  max-;*/
-        height: 185px;
-        background-image: url(../img/pattern.png);
-        background-repeat: repeat-x;
-        background-color:rgb(0, 140, 255);
+  background-color: var(--bool-primary);
+  background-image: url('../img/pattern.png');
+  background-size: 280px;
 }
 
-#logo
+.logo_img
 {
-        width: 50%;
-        height: 50%;
-        margin-top: 70px;
-        margin-left: -280px;
+  padding: 1rem 0.5rem;
+  /*   padding-top: 1rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.25; */
 }
 
-#title
+/* #endregion Header */
+
+/* #region Main */
+
+main
 {
-        font-size: 500%;
+  width: 80%;
+  margin: auto;
 }
 
-#undertitle
+.meta
 {
-        margin-top: -40px;
-        font-weight: normal;
-        font-size: 200%;
+  color: var(--bool-gray);
+
 }
 
-#author
+.author_link
 {
-        color:aqua;
+  text-decoration: none;
+  color: var(--bool-secondary);
 }
 
-#date
+.date
 {
-        margin-top: -20px;
-        font-weight: normal;
-        font-size: 110% ;
+  font-size: 0.8rem;
 }
 
-
-#photo1
+.caption
 {
-        width: 52.5%;
-        height: 52.5%;
+  font-size: 0.8rem;
+
 }
 
-#photo2
+/* Related articles */
+
+.related_article
 {
-        width: 45%;
-        height: 45%;
+  width: 240px;
+  height: 240px;
+  color: var(--bool-white);
+  padding: 0.5rem;
+  background-repeat: no-repeat;
 }
 
-.sizeFont
+#monitor
 {
-        font-size: 30px;
+  background-image: url('../img/monitor.jpg');
 }
 
-.highlighter
+#graph
 {
-        background-color: yellow;
+  background-image: url('../img/graph.jpg');
 }
+
+/* #endregion Main */
+
+/* #region Footer */
+
+footer
+{
+  padding: 3rem 0;
+  background-color: var(--bool-primary);
+  color: var(--bool-white)
+}
+
+/* #endregion Footer */
+
+
+
+
+
+/* Student note
+===============================================================
+Si inizia prima con una sezione generale in cui si inizializza
+il foglio di stile (reset generale ed impostazione variabili
+===============================================================
+1 Reset del Browser
+Per prima cosa vengono azzerati tutti i comportamenti pre-definiti del browser.
+Tramite il generico tag *, si fa riferimento a tutta la pagina e si impostamo
+i margini a 0, il padding a 0 e box-sizing uguale al border-box
+www > The box-sizing sets how the total width and height of an element is calculated.
+www > If you set box-sizing: border-box; on an element, padding and border 
+      are included in the width and height:
+
+2 Le variabili
+Tramite il particolare costrutto :root, è possibile definire delle variabili da
+utilizzare all'interno di tutto il css.
+Il vantaggio dell'utilizzo delle variabili è legato al fatto che se si utilizzano 
+in piu css le stresse variabili, volendo un giorno fare un cambiamento,
+la modifica va fatta solo nelle variabili e queste agiranno sull'intero foglio di stile
+Le variabili vanno impostate come al solito "valore: proprietà;" di seguito 
+si è scelta la convenzione di precedere il valore con --bool e quindi oer il binco si ha
+--bool-white etc.
+
+3 Definizione dei titoli
+Vengono definiti per gli hi(1,2,3...) le dimensioni rispetto al font predefinito
+del brouser (questa unità è il rem) ed eventualmente un colore usando le variabili)
+
+4 Inizializzazione per la tabella
+border-spacing=0
+www > The border-spacing sets the distance between the borders of adjacent 
+      cells in a <table>
+
+===========================================================
+Si definiscono poi tutta una serie di utility (come classi) 
+che possono essere utilizzate ovunque
+Come dimensione si continua ad utilizzare il rem
+===========================================================
+1 .py_1 Padding superiore ed inferiore di 1 rem
+2 .py_2 Padding superiore ed inferiore di 2 rem
+3 .pl_1 Pudding left di 1 rem
+4 .pt_1 Pudding top di 1 rem
+5 .w_50 Larghezza 50% (utile nella definizione della tabella)
+6 .text_left Allineamento del testo a sinista
+7 .bg_primary Definizione del colore del background e del colore del testo
+8 .bg_primary_soft Definizione del solo colore del background 
+
+*/
