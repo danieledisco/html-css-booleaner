@@ -32,7 +32,7 @@ h3
 
 table
 {
-  border-spacing: 0;
+  border-spacing: 0; /* Border spacing definisce nella tabella la larghezze dei bordi delle celle */
 }
 
 /* #endregion Common */
